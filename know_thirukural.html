@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>know_thirukural</title>    
+    <link rel="stylesheet" href="./assets/css/thirukural.css">
+</head>
+<body>
+    <div class="thirukuralproj">
+        <div class="tittle">
+            <div class="logo">
+              <img src="./assets/images/thiruvalluvar.jpg">
+            </div>
+            <div class="tittletxt"><h1>KNOW YOUR KURALS</h1></div>
+        </div>
+
+        <div class="kuralnumber_selection"> 
+                <div class="inptSelection">          
+                    <span>Enter Kural Number</span>
+                    <input id="kural_num"  onkeypress="tirukural.fetchThirukural()">  
+                </div>
+                <div class="random">   
+                    <span>Or search</span>           
+                    <button   onclick="tirukural.fetchThirukuralRandom()">Random Kural</button>
+                </div>
+        </div>
+        <div class="kuralnumberdisplay">
+            <span>Kural #</span>
+            <span id="show_kural_num"></span>
+        </div>
+
+        <div class="kuraldisplay">
+            <div class="kural_tamil">
+                <h2>Kural in Tamil</h2>
+                <div id="tam_kur"></div>
+                <div id="tam_kur_linetwo"></div>
+                <h3>Chapter Name :</h3>                
+                <div id="tml_chap_name"></div>
+                <h3>Section Name :</h3> 
+                <div id="tml_chap_sec"></div>              
+            </div>
+            <div class="kural_english">
+                <h2>Kural in English</h2>
+                <div id="eng_kur"></div>
+                <div id="eng_kur_linetwo"></div>
+                <h3>Chapter Name :</h3>
+                <div id="eng_chap_name"></div>
+                <h3>Section Name :</h3>
+                <div id="eng_chap_sec"></div>
+            </div>
+        </div>
+       <!-- <div class="kural_details">
+            <iframe src="know_thirukural.html" frameborder="2" width =400px id="tamil"></iframe>
+            <iframe src="know_thirukural.html" frameborder="2" width =400px id="english"></iframe>-->
+        </div>
+    
+</body>
+<script src="./assets/js/thirukural.js"></script> 
+</html>
